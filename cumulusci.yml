@@ -1,0 +1,20 @@
+minimum_cumulusci_version: '3.9.0'
+project:
+    name: CCS_Test
+    package:
+        name:  ccs_test
+        namespace: ccs_test
+        api_version: '48.0'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/CCS_Test/tests
+            options:
+                outputdir: robot/CCS_Test/results
+
+    robot_testdoc:
+        options:
+            path: robot/CCS_Test/tests
+            output: robot/CCS_Test/doc/CCS_Test_tests.html
