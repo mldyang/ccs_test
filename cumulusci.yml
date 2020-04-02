@@ -1,5 +1,7 @@
 minimum_cumulusci_version: '3.9.0'
 project:
+    dependencies:
+        - github: https://github.com/SalesforceFoundation/NPSP
     name: CCS_Test
     package:
         name:  ccs_test
